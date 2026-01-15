@@ -17,11 +17,13 @@ const menuUi = {
 
 <template>
   <UHeader
+    mode="slideover"
     :ui="{
       root: 'bg-brand-400 border-none shadow-xl z-50 mx-4 md:mx-8 rounded-full mt-4 transition-all ',
       container: 'px-6 py-3 min-h-[auto] flex items-center justify-between',
-      header: 'bg-brand-400 border-b border-white/10',
+      header: 'bg-brand-400 border-b border-black/30',
       body: 'bg-brand-400 p-6',
+      content: 'bg-brand-400',
     }"
   >
     <template #left>
