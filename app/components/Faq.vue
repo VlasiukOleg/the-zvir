@@ -87,7 +87,7 @@ const scrollToContacts = () => {
           :items="items"
           :ui="{
             root: 'flex flex-col gap-4 w-full',
-            item: 'border-2 border-brand-500 dark:border-white/10 rounded-3xl bg-white dark:bg-gray-800 transition-all duration-300 hover:border-brand-400 shadow-sm overflow-hidden',
+            item: 'border-2 border-brand-400 dark:border-white/10 rounded-3xl bg-white dark:bg-gray-800 transition-all duration-300 hover:border-brand-600 shadow-sm overflow-hidden',
             trigger:
               'px-4 py-3 md:px-8 md:py-6 text-sm md:text-lg font-semibold text-gray-800 dark:text-white uppercase tracking-wide justify-between',
             content:

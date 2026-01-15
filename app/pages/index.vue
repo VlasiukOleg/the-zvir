@@ -1,5 +1,5 @@
 <template>
   <Hero />
+  <Groomers />
   <Faq />
-  <Empty />
 </template>
