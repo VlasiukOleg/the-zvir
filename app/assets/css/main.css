@@ -1,12 +1,34 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
 
-
 body {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
+  background-color: #f9f8f6;
 }
 
-h1, h2, h3, .font-black {
+.dark body {
+  background-color: #1a1a1a;
+}
+
+h1,
+h2,
+h3,
+.font-black {
   font-weight: 900;
   letter-spacing: -0.02em;
+}
+
+@theme {
+  --color-brand-50: #f1f7fd;
+  --color-brand-100: #e0edf9;
+  --color-brand-200: #cee3f6;
+  --color-brand-300: #a2ccee;
+  --color-brand-400: #76b0e4;
+  --color-brand-500: #5693db;
+  --color-brand-600: #4279ce;
+  --color-brand-700: #3866bd;
+  --color-brand-800: #33539a;
+  --color-brand-900: #2e477a;
+  --color-brand-950: #202d4b;
+  --font-nunito: "Nunito", sans-serif;
 }
