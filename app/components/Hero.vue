@@ -41,7 +41,7 @@ const scrollToBooking = () => {
           <UButton
             label="ЗАПИСАТИСЯ"
             size="xl"
-            class="bg-brand-700 hover:bg-brand-800 text-white px-12 py-4 font-bold text-xl shadow-xl shadow-[#c59d76]/30 cursor-pointer hidden md:block"
+            class="bg-accent hover:bg-accent/50 text-white px-12 py-4 font-bold text-xl shadow-xl shadow-[#c59d76]/30 cursor-pointer hidden md:block"
             @click="scrollToBooking"
           />
         </div>

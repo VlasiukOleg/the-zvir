@@ -28,7 +28,7 @@ const features = [
 </script>
 
 <template>
-  <section id="groomers" class="py-8 md:py-12">
+  <section id="groomers" class="bg-light-beige py-8 md:py-12">
     <UContainer>
       <div class="text-center mb-8 md:mb-12">
         <h2

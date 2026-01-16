@@ -3,7 +3,7 @@
 
 body {
   font-family: "Nunito", sans-serif;
-  background-color: #f9f8f6;
+  background-color: #dad3ce;
 }
 
 .dark body {
@@ -30,5 +30,9 @@ h3,
   --color-brand-800: #33539a;
   --color-brand-900: #2e477a;
   --color-brand-950: #202d4b;
+  --color-accent: #94AFCA;
+  --color-light-accent: #cfe3f7;
+  --color-beige: #dad3ce;
+  --color-light-beige: #f5efe4;
   --font-nunito: "Nunito", sans-serif;
 }

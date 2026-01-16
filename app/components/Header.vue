@@ -9,9 +9,9 @@ const items = computed<NavigationMenuItem[]>(() => [
 ]);
 
 const menuUi = {
-  link: "group relative w-full flex items-center gap-1.5 uppercase !font-nunito tracking-widest text-lg font-sans !text-white hover:!text-white/70 transition-colors",
-  linkLeadingIcon: "!text-white",
-  active: "!text-white after:bg-white",
+  link: "group relative w-full flex items-center gap-1.5 uppercase !font-nunito tracking-widest text-lg font-sans !text-accent hover:!text-accent/70 transition-colors",
+  linkLeadingIcon: "!text-accent",
+  active: "!text-accent after:bg-text-accent",
 };
 </script>
 
@@ -19,20 +19,20 @@ const menuUi = {
   <UHeader
     mode="slideover"
     :ui="{
-      root: 'bg-brand-400 border-none shadow-xl z-50 mx-4 md:mx-8 rounded-full mt-4 transition-all ',
+      root: 'bg-light-accent border-none shadow-xl z-50 mx-4 md:mx-8 rounded-full mt-4 transition-all ',
       container: 'px-6 py-3 min-h-[auto] flex items-center justify-between',
-      header: 'bg-brand-400 border-b border-black/30',
-      body: 'bg-brand-400 p-6',
-      content: 'bg-brand-400',
+      header: 'bg-light-accent border-b border-black/30',
+      body: 'bg-light-accent p-6',
+      content: 'bg-light-accent',
     }"
   >
     <template #left>
       <NuxtLink to="/" class="flex items-center">
-        <span
-          class="text-brand-950 font-black text-2xl tracking-tighter uppercase leading-none"
-        >
-          The Zvir
-        </span>
+       <img 
+      src="/images/logo-black.png" 
+      alt="The Zvir Logo" 
+      class="h-10 md:h-12 w-auto object-contain"
+    />
       </NuxtLink>
     </template>
 
@@ -44,7 +44,7 @@ const menuUi = {
       <UButton
         label="Записатись"
         variant="solid"
-        class="ml-2 hidden md:block bg-brand-700 hover:bg-brand-800"
+        class="ml-2 hidden md:block bg-accent hover:bg-accent/50"
       />
     </template>
 
