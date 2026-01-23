@@ -48,14 +48,14 @@ const features = [
         <div
           v-for="(feature, index) in features"
           :key="index"
-          class="group relative bg-white border-2 border-brand-400 rounded-3xl p-6 hover:border-brand-600 transition-all hover:shadow-xl hover:-translate-y-1 duration-300"
+          class="group relative bg-white border-2 border-accent rounded-3xl p-6 hover:border-accent/70 transition-all hover:shadow-xl hover:-translate-y-1 duration-300"
         >
           <div
-            :class="'inline-flex items-center justify-center w-16 h-16 lg:w-20 lg:h-20 rounded-2xl bg-brand-600 mb-6 group-hover:scale-110 transition-transform duration-300'"
+            :class="'inline-flex items-center justify-center w-16 h-16 lg:w-20 lg:h-20 rounded-2xl bg-light-accent mb-6 group-hover:scale-110 transition-transform duration-300'"
           >
             <UIcon
               :name="feature.icon"
-              class="w-8 h-8 lg:w-10 lg:h-10 text-white"
+              class="w-8 h-8 lg:w-10 lg:h-10 text-gray-600"
             />
           </div>
 
@@ -71,6 +71,4 @@ const features = [
   </section>
 </template>
 
-<style scoped>
-/* Додаткові стилі, якщо будуть потрібні специфічні анімації */
-</style>
+<style scoped></style>

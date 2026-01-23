@@ -71,7 +71,7 @@ const scrollToContacts = () => {
 <template>
   <section
     id="faq"
-    class="bg-beige py-8 md:py-12 bg-[#f9f8f6] dark:bg-gray-900 transition-colors"
+    class="bg-beige py-8 md:py-12 dark:bg-gray-900 transition-colors"
   >
     <UContainer>
       <div class="text-center mb-8 md:mb-12">
@@ -87,7 +87,7 @@ const scrollToContacts = () => {
           :items="items"
           :ui="{
             root: 'flex flex-col gap-4 w-full',
-            item: 'border-2 border-brand-400 dark:border-white/10 rounded-3xl bg-white dark:bg-gray-800 transition-all duration-300 hover:border-brand-600 shadow-sm overflow-hidden',
+            item: 'border-2 border-accent dark:border-white/10 rounded-3xl bg-white dark:bg-gray-800 transition-all duration-300 hover:border-accent/50 shadow-sm overflow-hidden',
             trigger:
               'px-4 py-3 md:px-8 md:py-6 text-sm md:text-lg font-semibold text-gray-800 dark:text-white uppercase tracking-wide justify-between',
             content:

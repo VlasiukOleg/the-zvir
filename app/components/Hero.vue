@@ -10,19 +10,27 @@ const scrollToBooking = () => {
   >
     <UContainer>
       <div class="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
-        <div class="relative order-2 md:order-1">
-          <img
-            src="/images/hero-dog.png"
-            alt="Cute dog"
-            class="w-full h-auto object-contain max-h-125"
-          />
+        <div class="relative order-2 md:order-1 flex justify-center">
+          <div
+            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[320px] h-[320px] md:w-[450px] md:h-[450px] bg-accent/10 rounded-full blur-3xl -z-10"
+          ></div>
+
+          <div
+            class="relative w-[320px] h-[320px] md:w-100 md:h-100 rounded-full overflow-hidden border-[6px] border-accent/30 shadow-2xl shadow-accent/20 bg-white/50 backdrop-blur-sm z-10 lg:ml-10"
+          >
+            <img
+              src="/images/hero-dog-1.png"
+              alt="Cute dog"
+              class="w-full h-full object-cover object-center pt-4"
+            />
+          </div>
         </div>
 
         <div class="order-3 text-center">
           <UButton
             label="ЗАПИСАТИСЯ"
             size="xl"
-            class="bg-brand-700 hover:bg-brand-800 md:hidden text-white px-12 py-4 font-bold text-xl shadow-xl shadow-[#c59d76]/30 cursor-pointer"
+            class="bg-accent hover:bg-accent/50 md:hidden text-white px-12 py-4 font-bold text-xl shadow-xl shadow-[#c59d76]/30 cursor-pointer"
             @click="scrollToBooking"
           />
         </div>

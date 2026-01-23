@@ -2,7 +2,7 @@
 @import "@nuxt/ui";
 
 body {
-  font-family: "Nunito", sans-serif;
+  font-family: "Wix Madefor Text", sans-serif;
   background-color: #dad3ce;
 }
 
@@ -14,6 +14,7 @@ h1,
 h2,
 h3,
 .font-black {
+  font-family: "Montserrat Alternates", sans-serif;
   font-weight: 900;
   letter-spacing: -0.02em;
 }
@@ -30,9 +31,11 @@ h3,
   --color-brand-800: #33539a;
   --color-brand-900: #2e477a;
   --color-brand-950: #202d4b;
-  --color-accent: #94AFCA;
+  --color-accent: #94afca;
   --color-light-accent: #cfe3f7;
   --color-beige: #dad3ce;
   --color-light-beige: #f5efe4;
   --font-nunito: "Nunito", sans-serif;
+  --font-montserrat: "Montserrat Alternates", sans-serif;
+  --font-wix: "Wix Madefor Text", sans-serif;
 }
