@@ -2,4 +2,5 @@
   <Hero />
   <Groomers />
   <Faq />
+  <Services />
 </template>
