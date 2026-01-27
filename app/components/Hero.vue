@@ -18,11 +18,16 @@ const scrollToBooking = () => {
           <div
             class="relative w-[320px] h-[320px] md:w-100 md:h-100 rounded-full overflow-hidden border-[6px] border-accent/30 shadow-2xl shadow-accent/20 bg-white/50 backdrop-blur-sm z-10 lg:ml-10"
           >
-            <img
-              src="/images/hero-dog-1.png"
-              alt="Cute dog"
-              class="w-full h-full object-cover object-center pt-4"
-            />
+            <video
+              src="/video/zvir-hero.MOV"
+              autoplay
+              loop
+              muted
+              playsinline
+              class="w-full h-full object-cover object-center"
+            >
+              Ваш браузер не підтримує відео.
+            </video>
           </div>
         </div>
 
