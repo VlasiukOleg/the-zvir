@@ -36,7 +36,8 @@ const scrollToBooking = () => {
             label="ЗАПИСАТИСЯ"
             size="xl"
             class="bg-accent hover:bg-accent/50 md:hidden text-white px-12 py-4 font-bold text-xl shadow-xl shadow-[#c59d76]/30 cursor-pointer"
-            @click="scrollToBooking"
+            to="https://w1245642.alteg.io"
+            target="_blank"
           />
         </div>
 
@@ -55,7 +56,8 @@ const scrollToBooking = () => {
             label="ЗАПИСАТИСЯ"
             size="xl"
             class="bg-accent hover:bg-accent/50 text-white px-12 py-4 font-bold text-xl shadow-xl shadow-[#c59d76]/30 cursor-pointer hidden md:block"
-            @click="scrollToBooking"
+            to="https://w1245642.alteg.io"
+            target="_blank"
           />
         </div>
       </div>

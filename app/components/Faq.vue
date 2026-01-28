@@ -71,7 +71,7 @@ const scrollToContacts = () => {
 <template>
   <section
     id="faq"
-    class="bg-beige py-8 md:py-12 dark:bg-gray-900 transition-colors"
+    class="bg-light-beige py-8 md:py-12 dark:bg-gray-900 transition-colors"
   >
     <UContainer>
       <div class="text-center mb-8 md:mb-12">

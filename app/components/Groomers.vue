@@ -28,7 +28,7 @@ const features = [
 </script>
 
 <template>
-  <section id="groomers" class="bg-light-beige py-8 md:py-12">
+  <section id="groomers" class="bg-light-beige dark:bg-gray-900 py-8 md:py-12">
     <UContainer>
       <div class="text-center mb-8 md:mb-12">
         <h2
@@ -48,7 +48,7 @@ const features = [
         <div
           v-for="(feature, index) in features"
           :key="index"
-          class="group relative bg-white border-2 border-accent rounded-3xl p-6 hover:border-accent/70 transition-all hover:shadow-xl hover:-translate-y-1 duration-300"
+          class="group relative bg-white dark:bg-gray-900 border-2 border-accent rounded-3xl p-6 hover:border-accent/70 transition-all hover:shadow-xl hover:-translate-y-1 duration-300"
         >
           <div
             :class="'inline-flex items-center justify-center w-16 h-16 lg:w-20 lg:h-20 rounded-2xl bg-light-accent mb-6 group-hover:scale-110 transition-transform duration-300'"
@@ -59,7 +59,9 @@ const features = [
             />
           </div>
 
-          <h3 class="text-lg lg:text-xl font-bold text-gray-800 mb-3">
+          <h3
+            class="text-lg lg:text-xl font-bold text-gray-800 mb-3 dark:text-white/50"
+          >
             {{ feature.title }}
           </h3>
           <p class="text-gray-600 text-sm lg:text-base leading-relaxed">

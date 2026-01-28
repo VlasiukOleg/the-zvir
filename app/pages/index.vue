@@ -1,6 +1,6 @@
 <template>
   <Hero />
   <Groomers />
-  <Faq />
   <Services />
+  <Faq />
 </template>

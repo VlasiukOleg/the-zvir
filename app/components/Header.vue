@@ -2,9 +2,9 @@
 import type { NavigationMenuItem } from "@nuxt/ui";
 
 const items = computed<NavigationMenuItem[]>(() => [
-  { label: "ПРО НАС", to: "#about" },
-  { label: "ПОСЛУГИ", to: "#services" },
-  { label: "НАШІ ГРУМЕРИ", to: "#team" },
+  { label: "НАШІ МАЙСТРИ", to: "#groomers" },
+  { label: "НАШІ ПОСЛУГИ", to: "#services" },
+  { label: "ПИТАННЯ ТА ВІДПОВІДІ", to: "#faq" },
   { label: "КОНТАКТИ", to: "#contacts" },
 ]);
 
@@ -19,7 +19,7 @@ const menuUi = {
   <UHeader
     mode="slideover"
     :ui="{
-      root: 'bg-light-accent border-none shadow-xl z-50 mx-4 md:mx-8 rounded-full mt-4 transition-all ',
+      root: 'bg-light-accent dark:bg-gray-900 border-none shadow-xl z-50 mx-4 md:mx-8 rounded-full mt-4 transition-all ',
       container: 'px-6 py-3 min-h-[auto] flex items-center justify-between',
       header: 'bg-light-accent border-b border-black/30',
       body: 'bg-light-accent p-6',
@@ -28,11 +28,11 @@ const menuUi = {
   >
     <template #left>
       <NuxtLink to="/" class="flex items-center">
-       <img 
-      src="/images/logo-black.png" 
-      alt="The Zvir Logo" 
-      class="h-10 md:h-12 w-auto object-contain"
-    />
+        <img
+          src="/images/logo-black.png"
+          alt="The Zvir Logo"
+          class="h-10 md:h-12 w-auto object-contain"
+        />
       </NuxtLink>
     </template>
 
@@ -45,6 +45,8 @@ const menuUi = {
         label="Записатись"
         variant="solid"
         class="ml-2 hidden md:block bg-accent hover:bg-accent/50"
+        to="https://w1245642.alteg.io"
+        target="_blank"
       />
     </template>
 
