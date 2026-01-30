@@ -185,7 +185,7 @@ const services = [
                   label="ЗАПИСАТИСЯ"
                   size="xl"
                   class="bg-accent hover:bg-accent/50 text-white cursor-pointer"
-                  to="https://w1245642.alteg.io"
+                  to="https://w1361725.alteg.io"
                   target="_blank"
                 />
                 <UButton

@@ -3,4 +3,5 @@
   <Groomers />
   <Services />
   <Faq />
+  <Contacts />
 </template>

@@ -19,7 +19,7 @@ const menuUi = {
   <UHeader
     mode="slideover"
     :ui="{
-      root: 'bg-light-accent dark:bg-gray-900 border-none shadow-xl z-50 mx-4 md:mx-8 rounded-full mt-4 transition-all ',
+      root: 'bg-light-accent dark:bg-gray-900 border-none shadow-xl z-50  md:mx-8 rounded-full mt-4 transition-all ',
       container: 'px-6 py-3 min-h-[auto] flex items-center justify-between',
       header: 'bg-light-accent border-b border-black/30',
       body: 'bg-light-accent p-6',
@@ -45,7 +45,7 @@ const menuUi = {
         label="Записатись"
         variant="solid"
         class="ml-2 hidden md:block bg-accent hover:bg-accent/50"
-        to="https://w1245642.alteg.io"
+        to="https://w1361725.alteg.io"
         target="_blank"
       />
     </template>

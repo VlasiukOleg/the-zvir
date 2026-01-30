@@ -6,7 +6,7 @@ const scrollToBooking = () => {
 
 <template>
   <section
-    class="relative min-h-125 md:min-h-150 flex items-center py-8 md:py-12"
+    class="relative min-h-125 md:min-h-150 flex items-center py-8 md:py-12 bg-beige"
   >
     <UContainer>
       <div class="grid md:grid-cols-2 gap-4 md:gap-8 items-center">
@@ -56,7 +56,7 @@ const scrollToBooking = () => {
             label="ЗАПИСАТИСЯ"
             size="xl"
             class="bg-accent hover:bg-accent/50 text-white px-12 py-4 font-bold text-xl shadow-xl shadow-[#c59d76]/30 cursor-pointer hidden md:block"
-            to="https://w1245642.alteg.io"
+            to="https://w1361725.alteg.io"
             target="_blank"
           />
         </div>
