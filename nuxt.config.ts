@@ -13,4 +13,10 @@ export default defineNuxtConfig({
     display: "swap",
     download: true, // Завантажує шрифт локально при збірці (краще для швидкості)
   },
+  runtimeConfig: {
+    public: {
+      googleApiKey: "",
+      sheetId: "1tlTP3I9tj0PbVHtnCNGa3u4dEqZRoud-0BHUBr_aAuk",
+    },
+  },
 });

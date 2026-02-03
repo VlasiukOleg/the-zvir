@@ -8,10 +8,6 @@ const items: NavigationMenuItem[] = [
     target: "_blank",
   },
 ];
-
-const colorMode = useColorMode();
-
-const colorModeLogoPath = computed(() => colorMode.value === 'light' ? '/images/logo-black.png' : '/images/logo-white.png')
 </script>
 
 <template>
@@ -24,9 +20,14 @@ const colorModeLogoPath = computed(() => colorMode.value === 'light' ? '/images/
     <template #left>
       <NuxtLink to="/" class="flex items-center">
         <img
-          :src="colorModeLogoPath"
+          src="/images/logo-black.png"
           alt="The Zvir Logo"
-          class="h-10 md:h-12 w-auto object-contain"
+          class="h-10 md:h-12 w-auto object-contain dark:hidden"
+        />
+        <img
+          src="/images/logo-white.png"
+          alt="The Zvir Logo"
+          class="h-10 md:h-12 w-auto object-contain hidden dark:block"
         />
       </NuxtLink>
     </template>

@@ -101,6 +101,8 @@ const services = [
     },
   },
 ];
+
+const { data: serviceList } = await useFetch("/api/services");
 </script>
 
 <template>
@@ -116,7 +118,7 @@ const services = [
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         <div
-          v-for="(service, index) in services"
+          v-for="(service, index) in serviceList"
           :key="index"
           class="group relative bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-brand-300 hover:-translate-y-2 cursor-pointer flex flex-col items-center text-center h-full"
         >
