@@ -11,10 +11,10 @@
         <div class="group bg-white dark:bg-gray-800 p-8 lg:p-10 rounded-[2.5rem] border-2 border-transparent hover:border-accent/30 transition-all duration-300">
           <div class="flex flex-col h-full">
             <div class="mb-4">
-              <div class="w-14 h-14 bg-light-accent text-gray-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-accent/20">
+              <div class="w-14 h-14 bg-light-accent dark:bg-brand-900 text-gray-600 dark:text-brand-300 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-accent/20">
                 <UIcon name="i-lucide-map-pin" class="w-8 h-8" />
               </div>
-              <h3 class="text-xl xl:text-2xl font-black font-montserrat text-[#5d544f] dark:text-white uppercase mb-4">
+              <h3 class="text-xl xl:text-2xl font-black font-montserrat text-[#5d544f] dark:text-gray-300 uppercase mb-4">
                 The Звір Приймаченко
               </h3>
               <p class="font-wix text-base md:text-lg text-gray-600 dark:text-gray-400">
@@ -50,10 +50,10 @@
         <div class="group bg-white dark:bg-gray-800 p-8 lg:p-10 rounded-[2.5rem] border-2 border-transparent hover:border-accent/30 transition-all duration-300">
           <div class="flex flex-col h-full">
             <div class="mb-4">
-              <div class="w-14 h-14 bg-light-accent text-gray-600 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-accent/20">
+              <div class="w-14 h-14 bg-light-accent text-gray-600 dark:bg-brand-900 dark:text-brand-300 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-accent/20">
                 <UIcon name="i-lucide-map-pin" class="w-8 h-8" />
               </div>
-              <h3 class="text-xl xl:text-2xl font-black font-montserrat text-[#5d544f] dark:text-white uppercase mb-4">
+              <h3 class="text-xl xl:text-2xl font-black font-montserrat text-[#5d544f] dark:text-gray-300 uppercase mb-4">
                 The Звір Тютюнника
               </h3>
               <p class="font-wix text-base md:text-lg text-gray-600 dark:text-gray-400">
