@@ -6,7 +6,7 @@ const scrollToBooking = () => {
 
 <template>
   <section
-    class="relative min-h-125 md:min-h-150 flex items-center py-8 md:py-12 bg-beige"
+    class="relative min-h-125 md:min-h-150 flex items-center py-8 md:py-12 bg-beige dark:bg-gray-900"
   >
     <UContainer>
       <div class="grid md:grid-cols-2 gap-4 md:gap-8 items-center">

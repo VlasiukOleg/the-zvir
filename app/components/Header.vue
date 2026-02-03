@@ -13,13 +13,17 @@ const menuUi = {
   linkLeadingIcon: "!text-accent",
   active: "!text-accent after:bg-text-accent",
 };
+
+const colorMode = useColorMode();
+
+const colorModeLogoPath = computed(() => colorMode.value === 'light' ? '/images/logo-black.png' : '/images/logo-white.png')
 </script>
 
 <template>
   <UHeader
     mode="slideover"
     :ui="{
-      root: 'bg-light-accent dark:bg-gray-900 border-none shadow-xl z-50  md:mx-8 rounded-full mt-4 transition-all ',
+      root: 'bg-light-accent dark:bg-gray-700 border-none shadow-xl z-50  md:mx-8 rounded-full mt-4 transition-all ',
       container: 'px-6 py-3 min-h-[auto] flex items-center justify-between',
       header: 'bg-light-accent border-b border-black/30',
       body: 'bg-light-accent p-6',
@@ -29,7 +33,7 @@ const menuUi = {
     <template #left>
       <NuxtLink to="/" class="flex items-center">
         <img
-          src="/images/logo-black.png"
+          :src="colorModeLogoPath"
           alt="The Zvir Logo"
           class="h-10 md:h-12 w-auto object-contain"
         />
