@@ -1,108 +1,18 @@
 <script setup lang="ts">
-const services = [
-  {
-    title: "Візит-Знайомство",
-    icon: "i-lucide-heart",
-    shortDesc: "Перший грумінг без страху для цуценят.",
-    content: {
-      subheading:
-        "Уявіть перший грумінг без страху. Без тремтіння лапок і великих очей. Саме для цього ми ввели Візит-знайомство для цуценят.",
-      list: [
-        "До 60 хвилин знайомства з грумером",
-        "Малюк вчиться торкатися водички",
-        "Слухає звук фену без переляку",
-        "Знайомиться з інструментами у формі гри",
-        "Досліджує новий простір та людей",
-      ],
-      footer: "Без примусу. Тільки довіра, гра і спокій.",
-    },
-  },
-  {
-    title: "Повний комплекс",
-    icon: "i-lucide-sparkles",
-    shortDesc: "Стрижка, купання та догляд — усе включено.",
-    content: {
-      subheading:
-        "Уявіть грумінг, після якого хвостик махає, а не ховається. Без стресу, поспіху та «потерпи ще трішки». Це час справжньої турботи.",
-      list: [
-        "Делікатне купання з преміальною косметикою",
-        "Сушіння без різких звуків і перегріву",
-        "Повний гігієнічний догляд",
-        "Професійна стрижка за стандартом породи",
-        "Обов'язкові паузи на відпочинок",
-      ],
-      footer: "", // Тут футера немає
-    },
-  },
-  {
-    title: "Гігієнічний догляд",
-    icon: "i-lucide-droplets",
-    shortDesc: "Базова турбота для комфорту щодня.",
-    content: {
-      subheading:
-        "Догляд, який не лякає. Базова турбота, яка допомагає улюбленцю почуватися чисто та комфортно щодня.",
-      list: [
-        "Очищення вушок ніжними засобами",
-        "Делікатний догляд за очима",
-        "Купання та розчісування шерсті",
-        "Акуратне підстригання кігтиків",
-        "Гігієна лапок і делікатних зон",
-      ],
-      footer: "",
-    },
-  },
-  {
-    title: "Фарбування",
-    icon: "i-lucide-palette",
-    shortDesc: "М'який акцент і стиль. Pet-friendly.",
-    content: {
-      subheading:
-        "Стиль та індивідуальність без шкоди для здоров'я. Ми використовуємо лише перевірені методики.",
-      list: [
-        "Легкі акценти та пастельні відтінки",
-        "Креативні елементи за вашим бажанням",
-        "Підбір кольору під тип шерсті",
-        "Безпечні компоненти без різкого запаху",
-      ],
-      footer: "Ми використовуємо лише професійні, pet-friendly барвники.",
-    },
-  },
-  {
-    title: "SPA-догляд",
-    icon: "i-lucide-flower-2",
-    shortDesc: "Глибоке відновлення та релакс.",
-    content: {
-      subheading:
-        "Додатковий ритуал краси для максимального відновлення шерсті та релаксації вашого улюбленця.",
-      list: [
-        "Глибоке очищення та детокс шкіри",
-        "Живильні маски та обгортання",
-        "Інтенсивне зволоження шерсті",
-        "М'який розслабляючий масаж",
-        "Спокійне сушіння у комфортному темпі",
-      ],
-      footer: "",
-    },
-  },
-  {
-    title: "Озонотерапія",
-    icon: "i-lucide-wind",
-    shortDesc: "Здоров'я шкіри та блиск шерсті.",
-    content: {
-      subheading:
-        "Озонотерапія — це цілюща процедура, що м'яко діє на шкіру та покращує загальний стан шерсті.",
-      list: [
-        "Зменшення свербежу та подразнень",
-        "Глибоке очищення пор шкіри",
-        "Стимуляція росту та блиску шерсті",
-        "Допомога у відновленні захисного бар'єру",
-      ],
-      footer: "Процедура проходить у форматі теплої ванни з бульбашками.",
-    },
-  },
-];
+const { data: apiData } = await useFetch("/api/services");
 
-const { data: serviceList } = await useFetch("/api/services");
+const serviceList = ref(
+  apiData.value?.map((service: any) => ({ ...service, isOpen: false })) || [],
+);
+
+watch(apiData, (newData) => {
+  if (newData) {
+    serviceList.value = newData.map((service: any) => ({
+      ...service,
+      isOpen: false,
+    }));
+  }
+});
 </script>
 
 <template>
@@ -120,6 +30,7 @@ const { data: serviceList } = await useFetch("/api/services");
         <div
           v-for="(service, index) in serviceList"
           :key="index"
+          @click="service.isOpen = true"
           class="group relative bg-white dark:bg-gray-800 rounded-3xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-2 border-transparent hover:border-brand-300 hover:-translate-y-2 cursor-pointer flex flex-col items-center text-center h-full"
         >
           <div
@@ -141,7 +52,11 @@ const { data: serviceList } = await useFetch("/api/services");
           </p>
 
           <div class="mt-auto">
-            <USlideover :title="service.title" :ui="{ footer: 'justify-end' }">
+            <USlideover
+              v-model:open="service.isOpen"
+              :title="service.title"
+              :ui="{ footer: 'justify-end' }"
+            >
               <span
                 class="inline-flex items-center text-accent dark:text-brand-400 font-bold uppercase tracking-wider text-sm group-hover:underline decoration-2 underline-offset-4"
               >
@@ -168,20 +83,22 @@ const { data: serviceList } = await useFetch("/api/services");
                         name="i-lucide-paw-print"
                         class="w-5 h-5 text-accent shrink-0 mt-0.5"
                       />
-                      <span class="text-gray-600 dark:text-gray-300">{{
-                        item
-                      }}</span>
+                      <span
+                        class="text-gray-600 dark:text-gray-300 text-left"
+                        >{{ item }}</span
+                      >
                     </li>
                   </ul>
 
                   <div
                     v-if="service.content.footer"
-                    class="mt-6 p-4 bg-accent/5 rounded-xl border-l-4 border-accent italic text-accent"
+                    class="mt-6 p-4 bg-accent/5 rounded-xl border-l-4 border-accent italic text-accent text-left"
                   >
                     {{ service.content.footer }}
                   </div>
                 </div>
               </template>
+
               <template #footer="{ close }">
                 <UButton
                   label="ЗАПИСАТИСЯ"

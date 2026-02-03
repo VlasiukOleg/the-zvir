@@ -4,7 +4,7 @@ import type { NavigationMenuItem } from "@nuxt/ui";
 const items: NavigationMenuItem[] = [
   {
     label: "Політика конфіденційності",
-    to: "/",
+    to: "/policy",
     target: "_blank",
   },
 ];
