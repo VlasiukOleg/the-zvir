@@ -13,7 +13,7 @@ const items: NavigationMenuItem[] = [
 <template>
   <UFooter
     :ui="{
-      root: 'border-t border-gray-200 dark:border-gray-500 bg-light-beige dark:bg-gray-900',
+      root: 'border-t border-gray-200 dark:border-gray-500 bg-beige dark:bg-gray-900',
       bottom: 'sm: py-4',
     }"
   >

@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { LOCATIONS } from '~/data/locations';
-
+import { LOCATIONS } from "~/data/locations";
 </script>
 
 <template>
-  <section id="contacts" class="py-8 md:py-12 bg-beige dark:bg-gray-900">
+  <section id="contacts" class="py-8 md:py-12 bg-light-beige dark:bg-gray-900">
     <UContainer>
       <div class="text-center mb-8 md:mb-12">
         <h2

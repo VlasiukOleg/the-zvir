@@ -3,5 +3,6 @@
   <Groomers />
   <Services />
   <Faq />
+  <BeforeAfter />
   <Contacts />
 </template>
