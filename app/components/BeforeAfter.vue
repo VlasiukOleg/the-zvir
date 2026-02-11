@@ -42,6 +42,9 @@ const items = [
         :items="items"
         :ui="{
           item: 'basis-full sm:basis-[70%] sm:transition-opacity sm:[&:not(.is-snapped)]:opacity-30 lg:basis-1/3 lg:[&:not(.is-snapped)]:opacity-100',
+           dots: '-bottom-12 md:-bottom-7',
+           prev: 'bg-light-accent',
+           next: 'bg-light-accent',
         }"
         class="max-w-sm sm:max-w-md mx-auto md:max-w-lg lg:max-w-4xl xl:max-w-6xl"
       >
