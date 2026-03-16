@@ -19,7 +19,8 @@ const scrollToBooking = () => {
             class="relative w-[320px] h-[320px] md:w-100 md:h-100 rounded-full overflow-hidden border-[6px] border-accent/30 shadow-2xl shadow-accent/20 bg-white/50 backdrop-blur-sm z-10 lg:ml-10"
           >
             <video
-              src="/video/zvir-hero.MOV"
+              src="/video/zvir-hero.mp4"
+              poster="/images/hero-placeholder-video.webp"
               autoplay
               loop
               muted

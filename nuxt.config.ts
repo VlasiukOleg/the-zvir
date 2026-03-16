@@ -23,4 +23,9 @@ export default defineNuxtConfig({
     },
     
   },
+  app: {
+    head: {
+      title: 'The Zvir - зоомагазин та грумінг салон. Ваш вірний супутник у світі турботи про вихованців',
+    },
+  },
 });
