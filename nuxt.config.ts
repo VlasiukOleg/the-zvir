@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/ui", "@nuxtjs/google-fonts"],
+  modules: ["@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-meta-pixel"],
   css: ["~/assets/css/main.css"],
   googleFonts: {
     families: {
@@ -18,5 +18,8 @@ export default defineNuxtConfig({
       googleApiKey: "",
       sheetId: "1tlTP3I9tj0PbVHtnCNGa3u4dEqZRoud-0BHUBr_aAuk",
     },
+    metapixel: {
+        default: { id: '910025741945629', pageView: '**' },
+    }
   },
 });
