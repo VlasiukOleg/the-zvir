@@ -17,9 +17,10 @@ export default defineNuxtConfig({
     public: {
       googleApiKey: "",
       sheetId: "1tlTP3I9tj0PbVHtnCNGa3u4dEqZRoud-0BHUBr_aAuk",
-    },
-    metapixel: {
+      metapixel: {
         default: { id: '910025741945629', pageView: '**' },
     }
+    },
+    
   },
 });
